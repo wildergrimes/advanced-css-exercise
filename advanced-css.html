@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Advanced CSS</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+<body>
+    <div class="parent-container">
+        <div class="div" id="div-1"> 
+            <span>this div is statically positioned</span>
+        </div>
+        <div class="div" id="div-2"> 
+            <span>this div is relatively position</span>
+        </div>
+        <div class="div" id="div-3"> 
+            <span>this div is sticky positioned</span>
+        </div>
+        <div class="div" id="div-4"> 
+            <span>this div is absolutely positioned</span>
+        </div>
+        <div class="div" id="div-5"> 
+            <span>this div is fixed position</span>
+        </div>
+    </div>
+    <style>
+.parent-container{
+    position: static;
+    width: 60vw;
+    height: 200vh;
+    background-color:lightgray;
+    margin-left: auto;
+    margin-right: auto;
+}
+.div{
+    width: 200px;
+    height: 200px;
+}
+#div-1{
+    background-color:navy;
+    position: static;
+}
+#div-2{
+    background-color: thistle;
+    position: relative;
+    left: 20px;
+}
+#div-3{
+    background-color:darkgreen;
+    position: sticky;
+    right: 50px;
+    top: 50px;
+}
+#div-4{
+    background-color:honeydew;
+    position:absolute;
+    left: 400px;
+    
+}
+#div-5{
+    background-color:dodgerblue;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+    </style>
+ </body>
+</html>
